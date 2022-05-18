@@ -1,11 +1,10 @@
-import { useState } from "react";
-import "./App.css";
-
+import React from "react";
+import Navbar from "./Navbar";
 function App() {
   return (
-    <div>
-      <h2>Gift</h2>
-    </div>
+    <>
+      <h2>navbar project setup</h2>
+    </>
   );
 }
 
