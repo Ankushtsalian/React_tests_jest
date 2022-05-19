@@ -1,11 +1,12 @@
-import React from "react";
+import Modal from "./Modal";
 import Sidebar from "./Sidebar";
-
+import "./sidebar.css";
 const SidebarModal = () => {
   return (
-    <div>
+    <>
       <Sidebar />
-    </div>
+      <Modal />
+    </>
   );
 };
 

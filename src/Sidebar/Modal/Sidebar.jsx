@@ -1,8 +1,13 @@
-import "./sidebar.css";
-import React from "react";
+import { FaBars } from "react-icons/fa";
 
 const Sidebar = () => {
-  return <div>Sidebar</div>;
+  return (
+    <main>
+      <button className="sidebar-toggle">
+        <FaBars />
+      </button>
+    </main>
+  );
 };
 
 export default Sidebar;
