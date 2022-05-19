@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from "react";
-import { FaBars, FaTwitter } from "react-icons/fa";
 import { links, social } from "./data";
 import { Fade as Hamburger } from "hamburger-react";
 import logo from "./logo.svg";
