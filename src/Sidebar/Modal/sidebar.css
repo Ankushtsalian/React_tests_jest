@@ -118,12 +118,12 @@ main {
 .close-btn:hover {
   color: var(--clr-red-light);
 }
-.logo {
+/* .logo {
   justify-self: center;
   height: 40px;
-}
+} */
 
-.links a {
+/* .links a {
   display: flex;
   align-items: center;
   font-size: 1.25rem;
@@ -160,7 +160,7 @@ main {
 }
 .social-icons a:hover {
   color: var(--clr-primary-1);
-}
+} */
 
 .sidebar {
   position: fixed;
