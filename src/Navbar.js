@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { links, social } from "./data";
 import { Fade as Hamburger } from "hamburger-react";
 import logo from "./logo.svg";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
@@ -54,6 +55,9 @@ const Navbar = () => {
           })}
         </ul>
       </div>
+      <>
+        <Link to="/Sidebar">SidebarModal</Link>
+      </>
     </nav>
   );
 };
