@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "./../../logo.svg";
 import { FaTimes } from "react-icons/fa";
-import { links, social } from "../../data";
+import { links, social } from "../../utils/data";
 import { useGlobalContext } from "../../context/context";
 
 const Sidebar = () => {
@@ -14,20 +14,21 @@ const Sidebar = () => {
           <FaTimes />
         </button>
       </div>
-      <ul className="links">
+      <ul className="links-sidebar">
         {links.map((link) => {
           const { id, url, text, icon } = link;
           return (
             <li key={id}>
               <a href={url}>
                 {icon}
+
                 {text}
               </a>
             </li>
           );
         })}
       </ul>
-      <ul className="social-icons">
+      <ul className="social-icons-sidebar">
         {social.map((link) => {
           const { id, url, icon } = link;
           return (
