@@ -6,7 +6,6 @@ import SidebarToggle from "./SidebarToggler";
 const SidebarModal = () => {
   return (
     <>
-      <Link to="/">Home</Link>
       <SidebarToggle />
       <Modal />
       <Sidebar />
