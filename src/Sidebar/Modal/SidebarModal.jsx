@@ -7,9 +7,9 @@ const SidebarModal = () => {
   return (
     <>
       <Link to="/">Home</Link>
-      <Sidebar />
       <SidebarToggle />
-      {/* <Modal /> */}
+      <Modal />
+      <Sidebar />
     </>
   );
 };
