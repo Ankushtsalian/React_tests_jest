@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { FaBars } from "react-icons/fa";
-import { AppContext, useGlobalContext } from "../../context/context";
+import { useGlobalContext } from "../../context/context";
 
 const SidebarToggle = () => {
   const { openSidebar, openModal } = useGlobalContext();
