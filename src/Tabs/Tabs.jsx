@@ -19,10 +19,27 @@ const Tabs = () => {
   }, []);
 
   if (loading) {
-    return <h1>Loading....</h1>;
+    return (
+      <section className="section tab-loading">
+        <h1>Loading....</h1>
+      </section>
+    );
   }
 
-  return <div>Tabs</div>;
+  const { company, dates, duties, title } = jobs[value];
+
+  return (
+    <section className="section">
+      <div className="tab-title">
+        <h2>experience</h2>
+        <div className="tab-underline"></div>
+      </div>
+      <div className="jobs-center">
+        {/* btn-container
+          job info */}
+      </div>
+    </section>
+  );
 };
 
 export default Tabs;
