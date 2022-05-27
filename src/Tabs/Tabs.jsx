@@ -14,7 +14,9 @@ const Tabs = () => {
     setLoading(false);
   };
 
-  useEffect(() => fetchJobs(), []);
+  useEffect(() => {
+    fetchJobs();
+  }, []);
 
   if (loading) {
     return <h1>Loading....</h1>;
