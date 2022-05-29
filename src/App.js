@@ -5,12 +5,14 @@ import SidebarModal from "./Sidebar/Modal/SidebarModal";
 import Home from "./component/Home";
 import Index from "./Menu/Index";
 import Tabs from "./Tabs/Tabs";
+import Stripe from "./Stripe/Stripe";
 
 function App() {
   return (
     <>
       <Routes>
         <Route path="/" element={<Home />}>
+          <Route index element={<Stripe />} />
           <Route path="/Navbar" element={<Navbar />} />
           <Route path="/Sidebar" element={<SidebarModal />} />
           <Route path="/Menu" element={<Index />} />
