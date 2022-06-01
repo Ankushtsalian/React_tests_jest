@@ -23,16 +23,16 @@ const AppProvider = ({ children }) => {
     setIsModalOpen(false);
   };
   const openStripeSidebar = () => {
-    setIsSidebarOpen(true);
+    setIsStripeSidebarOpen(true);
   };
   const closeStripeSidebar = () => {
-    setIsSidebarOpen(false);
+    setIsStripeSidebarOpen(false);
   };
   const openStripeSubmenu = () => {
-    setIsModalOpen(true);
+    setStripeSubmenuOpen(true);
   };
   const closeStripeSubmenu = () => {
-    setIsModalOpen(false);
+    setStripeSubmenuOpen(false);
   };
   const values = {
     openModal,
