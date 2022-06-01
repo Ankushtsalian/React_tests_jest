@@ -7,6 +7,11 @@ import { useGlobalContext } from "../context/context";
 const Navbar = () => {
   const { openStripeSidebar, openStripeSubmenu, closeStripeSubmenu } =
     useGlobalContext();
+
+  const displaySubMenu = (e) => {
+    openStripeSubmenu();
+  };
+
   return (
     <nav className="stripe-nav">
       <div className="stripe-nav-center">
@@ -21,13 +26,19 @@ const Navbar = () => {
         </div>
         <ul className="stripe-nav-links">
           <li>
-            <button className="stripe-link-btn">products</button>
+            <button className="stripe-link-btn" onMouseOver={displaySubMenu}>
+              products
+            </button>
           </li>
           <li>
-            <button className="stripe-link-btn">developers</button>
+            <button className="stripe-link-btn" onMouseOver={displaySubMenu}>
+              developers
+            </button>
           </li>
           <li>
-            <button className="stripe-link-btn">company</button>
+            <button className="stripe-link-btn" onMouseOver={displaySubMenu}>
+              company
+            </button>
           </li>
         </ul>
         <button className="stripe-btn signin-btn">Sign In</button>

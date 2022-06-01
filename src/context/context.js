@@ -7,8 +7,8 @@ const AppProvider = ({ children }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const [isStripeSidebarOpen, setIsStripeSidebarOpen] = useState(true);
-  const [isStripeSubmenuOpen, setStripeSubmenuOpen] = useState(true);
+  const [isStripeSidebarOpen, setIsStripeSidebarOpen] = useState(false);
+  const [isStripeSubmenuOpen, setStripeSubmenuOpen] = useState(false);
 
   const openSidebar = () => {
     setIsSidebarOpen(true);
