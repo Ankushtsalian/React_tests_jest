@@ -3,8 +3,8 @@ import { Link, Outlet } from "react-router-dom";
 import "./Home.css";
 const Home = () => {
   return (
-    <div className="home-nav">
-      <div className="home">
+    <div>
+      <div className="hom">
         <button className="home-btn">
           <Link to="/">Stripe-Home</Link>
         </button>
