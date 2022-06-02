@@ -50,6 +50,7 @@ const AppProvider = ({ children }) => {
     closeStripeSidebar,
     openStripeSubmenu,
     closeStripeSubmenu,
+    location
   };
   return <AppContext.Provider value={values}>{children}</AppContext.Provider>;
 };
