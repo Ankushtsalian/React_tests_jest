@@ -5,7 +5,7 @@ import phoneImg from "./images/phone.svg";
 const Hero = () => {
   const { closeStripeSubmenu } = useGlobalContext();
   return (
-    <section className="hero">
+    <section className="hero" onMouseOver={closeStripeSubmenu}>
       <div className="hero-center">
         <article className="hero-info">
           <h1>Payments infrastructure for the internet</h1>
