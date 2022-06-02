@@ -2,7 +2,11 @@ import React, { useState, useRef, useEffect } from "react";
 import { useGlobalContext } from "../context/context";
 
 const Submenu = () => {
-  const { isStripeSubmenuOpen, location } = useGlobalContext();
+  const {
+    isStripeSubmenuOpen,
+    location,
+    page: { page, links },
+  } = useGlobalContext();
   const container = useRef(null);
   useEffect(() => {
     const submenu = container.current;
@@ -18,7 +22,7 @@ const Submenu = () => {
       }`}
       ref={container}
     >
-      SUYB
+      <h4>{page}</h4>
     </aside>
   );
 };

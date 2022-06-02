@@ -36,6 +36,7 @@ const AppProvider = ({ children }) => {
     const page = sublinks.find((link) => link.page === text);
     setLocation(coordinates);
     setStripeSubmenuOpen(true);
+    setPage(page);
   };
   const closeStripeSubmenu = () => {
     setStripeSubmenuOpen(false);
@@ -54,6 +55,7 @@ const AppProvider = ({ children }) => {
     openStripeSubmenu,
     closeStripeSubmenu,
     location,
+    page,
   };
   return <AppContext.Provider value={values}>{children}</AppContext.Provider>;
 };
