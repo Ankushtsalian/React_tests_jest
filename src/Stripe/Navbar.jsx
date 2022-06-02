@@ -20,8 +20,14 @@ const Navbar = () => {
     openStripeSubmenu(page, { center, bottom });
   };
 
+  const handleSubMenu = (e) => {
+    if (!e.target.classList.contains("stripe-link-btn")) {
+      closeStripeSubmenu();
+    }
+  };
+
   return (
-    <nav className="stripe-nav">
+    <nav className="stripe-nav" onMouseOver={handleSubMenu}>
       <div className="stripe-nav-center">
         <div className="stripe-nav-header">
           <img src={logo} className="nav-logo" alt="stripe" />
