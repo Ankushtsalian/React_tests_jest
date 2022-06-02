@@ -8,12 +8,17 @@ const Navbar = () => {
   const { openStripeSidebar, openStripeSubmenu, closeStripeSubmenu } =
     useGlobalContext();
 
-const displaySubMenu=(e)=>{
-  //gives text in button ex:developer product company
-  const page=e.target.textContent
-  //get location of button coordinates
-alert(page)
-}
+  const displaySubMenu = (e) => {
+    //gives text in button ex:developer product company
+    const page = e.target.textContent;
+    //get location of button coordinates
+    const tempBtn = e.target.getBoundingClientRect();
+    //get center
+    const center = (tempBtn.left + tempBtn.right) / 2;
+    //get bottom
+    const bottom = tempBtn.bottom - 3;
+    openStripeSubmenu(page, { center, bottom });
+  };
 
   return (
     <nav className="stripe-nav">

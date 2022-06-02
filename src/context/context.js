@@ -10,6 +10,8 @@ const AppProvider = ({ children }) => {
   const [isStripeSidebarOpen, setIsStripeSidebarOpen] = useState(false);
   const [isStripeSubmenuOpen, setStripeSubmenuOpen] = useState(false);
 
+  const [location, setLocation] = useState({});
+
   const openSidebar = () => {
     setIsSidebarOpen(true);
   };
@@ -28,7 +30,8 @@ const AppProvider = ({ children }) => {
   const closeStripeSidebar = () => {
     setIsStripeSidebarOpen(false);
   };
-  const openStripeSubmenu = () => {
+  const openStripeSubmenu = (text, coordinates) => {
+    setLocation(coordinates);
     setStripeSubmenuOpen(true);
   };
   const closeStripeSubmenu = () => {
