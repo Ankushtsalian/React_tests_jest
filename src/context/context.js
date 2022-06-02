@@ -12,6 +12,7 @@ const AppProvider = ({ children }) => {
 
   const [location, setLocation] = useState({});
 
+  const [page, setPage] = useState({ page: "", links: [] });
   const openSidebar = () => {
     setIsSidebarOpen(true);
   };
@@ -31,6 +32,8 @@ const AppProvider = ({ children }) => {
     setIsStripeSidebarOpen(false);
   };
   const openStripeSubmenu = (text, coordinates) => {
+    //value of textContent is text === whick link in data ex:development/prod/company
+    const page = sublinks.find((link) => link.page === text);
     setLocation(coordinates);
     setStripeSubmenuOpen(true);
   };
@@ -50,7 +53,7 @@ const AppProvider = ({ children }) => {
     closeStripeSidebar,
     openStripeSubmenu,
     closeStripeSubmenu,
-    location
+    location,
   };
   return <AppContext.Provider value={values}>{children}</AppContext.Provider>;
 };
